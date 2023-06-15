@@ -406,6 +406,11 @@ form.sign-up-form{
 }
 
 @media (max-width: 580px) {
+
+    .container {
+        min-height: 100vh;
+    }
+
     form{
         padding: 0 1.5rem;
     }
