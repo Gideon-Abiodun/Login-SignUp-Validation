@@ -328,7 +328,6 @@ form.sign-up-form{
     }
 
     .panels-container{
-        z-index: 1;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 2fr 1fr;
     }
