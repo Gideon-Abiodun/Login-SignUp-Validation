@@ -282,14 +282,14 @@ form.sign-up-form{
 .input-field span i {
     color: rgb(43, 142, 86);
     position: absolute;
-    top: -3.4rem;
+    top: -3.57rem;
 }
 
 .eyes-closed {
     width: 1.5rem;
     position: absolute;
     bottom: 14rem;
-    right: 12rem;
+    right: 10.1rem;
     display: block;
     cursor: pointer;
 }
