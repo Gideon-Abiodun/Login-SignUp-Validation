@@ -477,8 +477,6 @@ form.sign-up-form{
         position: absolute;
         bottom: 13.4rem;
         right: 3rem;
-        display: block;
-        cursor: pointer;
     }
 
     .eyes-closed-sign-up {
