@@ -464,11 +464,11 @@ form.sign-up-form{
     /* Error messages */
 
     .input-field span {
-        right: 2.44rem;
+        right: 1.8rem;
     }
 
     .input-field span i {
-        right: -1.2rem;
+        right: -1.6rem;
     }
 
     /* Password eye */
