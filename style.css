@@ -263,6 +263,7 @@ form.sign-up-form{
     opacity: 1;
 }
 
+/* Error messages */
 
 .input-field span {
     position: absolute;
@@ -289,6 +290,15 @@ form.sign-up-form{
     width: 1.5rem;
     position: absolute;
     bottom: 14rem;
+    right: 10.1rem;
+    display: block;
+    cursor: pointer;
+}
+
+.eyes-closed-sign-up {
+    width: 1.5rem;
+    position: absolute;
+    bottom: 11.3rem;
     right: 10.1rem;
     display: block;
     cursor: pointer;
@@ -394,6 +404,17 @@ form.sign-up-form{
         left: 50%;
     }
 
+    /* error message */
+    .input-field span {
+        right:14rem;
+    }
+    
+    .input-field span i {
+        top: -3.57rem;
+        right: -3.5rem;
+    }
+
+    /* Password eye */
     .eyes-closed {
         width: 1.5rem;
         position: absolute;
@@ -401,6 +422,10 @@ form.sign-up-form{
         right: 14rem;
         display: block;
         cursor: pointer;
+    }
+
+    .eyes-closed-sign-up {
+        bottom: 11.3rem;
     }
 }
 
@@ -436,6 +461,17 @@ form.sign-up-form{
         left: 50%;
     }
 
+    /* Error messages */
+
+    .input-field span {
+        right: 3rem;
+    }
+
+    .input-field span i {
+        right: -1.2rem;
+    }
+
+    /* Password eye */
     .eyes-closed {
         width: 1.5rem;
         position: absolute;
@@ -443,5 +479,9 @@ form.sign-up-form{
         right: 3rem;
         display: block;
         cursor: pointer;
+    }
+
+    .eyes-closed-sign-up {
+        bottom: 10.75rem;
     }
 }

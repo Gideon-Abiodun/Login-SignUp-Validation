@@ -203,6 +203,24 @@ eyeIcon.onclick = function(){
   }
 }
 
+// For Sign Up
+const eyeIconSignUp = document.getElementById('eyes-closed-signup');
+const passSignUp = document.getElementById('contact-password-one');
+
+eyeIconSignUp.onclick = function(){
+  if(passSignUp.type === "password") {
+    passSignUp.type = "text";
+    eyeIconSignUp.style.color = "grey";
+    eyeIconSignUp.style.textDecoration = "none";
+  }else {
+    passSignUp.type = "password";
+    eyeIconSignUp.style.color = "#333";
+    eyeIconSignUp.style.textDecoration = "line-through";
+    // eyeIcon.src = "./img/eye-close.png";
+    // eyeIcon = '<i class="fas fa-eye-slash"></i>';
+  }
+}
+
 
 
 
