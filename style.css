@@ -423,6 +423,10 @@ form.sign-up-form{
         padding: .5rem 1rem;
     }
 
+    .right-panel {
+        margin-top: -6rem;
+    }
+
     .container:before {
         bottom: 72%;
         left: 50%;
