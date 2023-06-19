@@ -69,13 +69,23 @@ function validateLogin() {
     }, 3000);
     return true;
   } else {
-    alert("Successfully Logged in!");
-    window.location.href = "https://www.google.com";
-    resetLogin.reset();
+    // Modal validation\
+    const modalPop = document.getElementById('modal-overlay');
+    modalPop.style.display = 'block';
+    popup.classList.add("open-popup");
+    setTimeout (function () {
+      // modalPop.style.display = 'none';
+      window.location.href = "https://github.com/Gideon-Abiodun";
+    }, 3000);
+    return; 
+    // alert("Successfully Logged in!");
   }
 }
-
+resetLogin.reset();
 // console.log(submitLoginError);
+
+
+
 
 // Sign Up validation
 
