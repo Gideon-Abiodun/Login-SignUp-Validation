@@ -354,7 +354,7 @@ form.sign-up-form{
 .popup {
     width: 350px;
     background: #fffdfd;
-    border-radius: 6px;
+    border-radius: 8px;
     position: absolute;
     top: 0;
     left: 50%;
@@ -369,8 +369,8 @@ form.sign-up-form{
 }
 
 .popup img {
-    width: 1rem;
-    margin-top: .46rem 0;
+    width: 1.2rem;
+    /* margin-top: .46rem 0; */
 } 
 
 .open-popup {
@@ -599,5 +599,6 @@ form.sign-up-form{
 
     .popup {
         width: 330px;
+        margin-top: -3rem;
     }
 }

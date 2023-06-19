@@ -97,6 +97,7 @@ const submitSignUpError = document.getElementById("signup-submit_error");
 // validate name.
 
 function signUpUser() {
+  event.preventDefault();
   const signUpUserName = document.getElementById(
     "contact-usernaname-one"
   ).value;
@@ -141,7 +142,6 @@ function validateEmail() {
 // validate Password
 
 function signUpPassword() {
-  // event.preventDefault();
   const signUppassword = document.getElementById("contact-password-one").value;
 
   if (signUppassword.length == "") {
@@ -162,6 +162,14 @@ function signUpPassword() {
   return true;
 }
 
+
+// test success message
+
+
+
+
+
+
 // submit signup
 
 function validateSignUp() {
@@ -174,11 +182,20 @@ function validateSignUp() {
     }, 3000);
     return false;
   } else {
-    alert("Successfully Sign Up!");
-    window.location.href = "https://www.google.com";
-    resetLogin.reset();
+    // modal 2
+    const modalPop = document.getElementById('modal-overlay');
+    modalPop.style.display = 'block';
+    popup.classList.add("open-popup");
+    setTimeout (function () {
+    window.location.href = "https://github.com/Gideon-Abiodun";
+    }, 5000);
+    return; 
+    // alert("Successfully Sign Up!");
+    // window.location.href = "https://www.google.com";
   }
 }
+resetLogin.reset();
+
 
 // Animation (transition from login to signup)
 
