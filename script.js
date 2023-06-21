@@ -71,8 +71,11 @@ function validateLogin() {
   } else {
     // Modal validation\
     const modalPop = document.getElementById('modal-overlay');
+    const successMessageLogin = document.getElementById('success-msg-login');
+    successMessageLogin.style.display = 'block';
     modalPop.style.display = 'block';
     popup.classList.add("open-popup");
+    successMessageLogin.innerHTML = 'Successfully logged in 👍';  
     setTimeout (function () {
       // modalPop.style.display = 'none';
       window.location.href = "https://github.com/Gideon-Abiodun";
@@ -167,9 +170,6 @@ function signUpPassword() {
 
 
 
-
-
-
 // submit signup
 
 function validateSignUp() {
@@ -180,15 +180,18 @@ function validateSignUp() {
     setTimeout(function () {
       submitSignUpError.style.display = "none";
     }, 3000);
-    return false;
+    return;
   } else {
     // modal 2
     const modalPop = document.getElementById('modal-overlay');
+    const successMessageLogin = document.getElementById('success-msg-login');
+    successMessageLogin.style.display = 'block';
     modalPop.style.display = 'block';
+    successMessageLogin.innerHTML = 'Successfully signed up 👍';
     popup.classList.add("open-popup");
     setTimeout (function () {
     window.location.href = "https://github.com/Gideon-Abiodun";
-    }, 5000);
+    }, 3000);
     return; 
     // alert("Successfully Sign Up!");
     // window.location.href = "https://www.google.com";
